@@ -11,7 +11,8 @@ import { IndicatorsModule } from '@progress/kendo-angular-indicators';
 import { InputsModule } from '@progress/kendo-angular-inputs';
 import { IconsModule } from '@progress/kendo-angular-icons';
 import { NavigationModule } from '@progress/kendo-angular-navigation';
-
+import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 
 @NgModule({
@@ -21,14 +22,16 @@ import { NavigationModule } from '@progress/kendo-angular-navigation';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     ButtonsModule,
     DialogModule,
-    BrowserAnimationsModule,
     LayoutModule,
     IndicatorsModule,
     IconsModule,
     InputsModule,
-    NavigationModule
+    NavigationModule,
+    MatIconModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
